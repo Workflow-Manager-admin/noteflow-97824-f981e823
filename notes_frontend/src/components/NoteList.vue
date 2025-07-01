@@ -63,16 +63,18 @@ function formatDate(dt: string) {
 <style scoped>
 .note-list-panel {
   background: var(--color-background-soft);
-  border-radius: 12px;
-  box-shadow: 0 2px 10px 0 rgba(18, 18, 17, 0.04);
-  padding: 1.1rem 0.7rem 0.5rem 0.7rem;
-  min-width: 250px;
-  min-height: 380px;
-  max-width: 340px;
+  border-radius: var(--corner-radius, 12px);
+  box-shadow: 0 2px 12px 0 rgba(18, 18, 17, 0.07);
+  padding: 1.1rem 0.65rem 0.51rem 0.72rem;
+  min-width: 210px;
+  min-height: 340px;
+  max-width: 350px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: 100%;
   margin-bottom: 1.1rem;
+  overflow-x: hidden;
 }
 .note-list-header {
   display: flex;

@@ -111,17 +111,19 @@ const currentNote = computed(() => {
 .note-main-layout {
   display: flex;
   flex-direction: row;
-  gap: 2.2rem;
-  padding-top: 0.5rem;
+  gap: 2.1rem;
+  padding-top: 0.4rem;
+  align-items: flex-start;
+  width: 100%;
 }
 .left-panel {
-  flex: 0 0 320px;
-  min-width: 220px;
-  max-width: 340px;
+  flex: 0 0 300px;
+  min-width: 180px;
+  max-width: 350px;
   width: 29vw;
   display: flex;
   flex-direction: column;
-  gap: 0.73rem;
+  gap: 0.5rem;
 }
 .main-panel {
   flex: 1 1 0;
@@ -129,30 +131,54 @@ const currentNote = computed(() => {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
   .note-main-layout {
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 0.8rem;
+    width: 100%;
   }
   .left-panel {
     flex-direction: row;
     min-width: 0;
     max-width: none;
     width: 100%;
-    gap: 0.7rem;
+    gap: 0.64rem;
+    align-items: stretch;
+    justify-content: stretch;
   }
   .main-panel {
     width: 100%;
     min-width: 0;
-    padding-top: 0.4rem;
+    padding-top: 0.25rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .note-main-layout {
-    padding-top: 0.1rem;
-    gap: 0.5rem;
+    flex-direction: column;
+    padding-top: 0.03rem;
+    gap: 0.27rem;
+    width: 100%;
+  }
+  .left-panel {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.2rem;
+    max-width: none;
+    padding: 0;
+  }
+  .main-panel {
+    padding-top: 0.13rem;
+    min-width: 0;
+  }
+}
+@media (max-width: 400px) {
+  .note-main-layout {
+    padding-top: 0rem;
+    gap: 0.09rem;
   }
 }
 </style>

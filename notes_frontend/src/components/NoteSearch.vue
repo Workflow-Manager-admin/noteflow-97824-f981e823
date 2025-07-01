@@ -52,33 +52,42 @@ function clear() {
 <style scoped>
 .note-search-form {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.35rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   background: var(--color-background-soft);
-  padding: 0.39rem 0.56rem;
+  padding: 0.34rem 0.51rem;
   border-radius: 10px;
-  box-shadow: 0 1px 3px 0 rgba(18, 18, 17, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(18, 18, 17, 0.057);
 }
 .search-input {
   flex: 1;
   border: none;
   background: transparent;
-  font-size: 1rem;
+  font-size: 1.01rem;
   color: var(--color-text);
   outline: none;
+  min-width: 0;
+  padding: 0.15rem 0.04rem;
 }
 .btn {
   border: none;
   background: none;
-  padding: 0.29rem 0.5rem;
+  padding: 0.25rem 0.45rem;
   cursor: pointer;
-  font-size: 1.16rem;
-  border-radius: 6px;
+  font-size: 1.18rem;
+  border-radius: 7px;
   transition: background 0.14s;
 }
 .btn-search:hover,
-.btn-clear:hover {
+.btn-clear:hover,
+.btn-search:focus {
   background: #eef0fa;
+}
+@media (max-width: 600px) {
+  .note-search-form {
+    padding: 0.22rem 0.16rem;
+    margin-bottom: 0.4rem;
+  }
 }
 </style>
