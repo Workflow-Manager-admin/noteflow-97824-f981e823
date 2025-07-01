@@ -29,7 +29,7 @@
           <button type="button" class="rte-btn" @click="editor.chain().focus().toggleHeading({level: 1}).run()" :class="{ active: editor.isActive('heading', { level: 1 }) }" title="Heading 1">H1</button>
           <button type="button" class="rte-btn" @click="editor.chain().focus().toggleHeading({level: 2}).run()" :class="{ active: editor.isActive('heading', { level: 2 }) }" title="Heading 2">H2</button>
         </div>
-        <editor-content
+        <EditorContent
           class="tiptap-content"
           v-if="editor"
           :editor="editor"
@@ -38,7 +38,7 @@
       </div>
       <div class="editor-actions">
         <button
-          v-if="note.id"
+          v-if="note.id && note.id !== ''"
           type="button"
           class="btn btn-delete"
           @click="handleDelete"
@@ -46,7 +46,7 @@
           Delete
         </button>
         <button type="submit" class="btn btn-primary">
-          {{ note.id ? "Save Changes" : "Create Note" }}
+          {{ note.id && note.id !== "" ? "Save Changes" : "Create Note" }}
         </button>
       </div>
     </form>

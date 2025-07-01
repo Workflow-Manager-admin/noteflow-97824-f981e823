@@ -10,3 +10,10 @@
   ➜  Network: http://172.17.0.2:3000/
   ➜  Vue DevTools: Open http://localhost:3000/__devtools__/ as a separate window
   ➜  Vue DevTools: Press Alt(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
+9:41:06 AM [vite] (client) hmr update /src/views/HomeView.vue
+9:41:20 AM [vite] (client) hmr update /src/components/NoteEditor.vue
+9:41:25 AM [vite] (client) hmr update /src/components/NoteEditor.vue
+9:41:36 AM [vite] (client) hmr update /src/views/HomeView.vue
+9:41:50 AM [vite] (client) hmr update /src/components/NoteEditor.vue
+9:42:03 AM [vite] (client) hmr update /src/components/NoteEditor.vue
+9:42:20 AM [vite] (client) hmr update /src/components/NoteEditor.vue
